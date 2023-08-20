@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-sans;
+    }
+
+    p {
+        @apply text-base;
+    }
+
+    .button {
+        @apply uppercase font-bold border-b border-b-green;
+    }
+}
