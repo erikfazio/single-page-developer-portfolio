@@ -4,24 +4,54 @@
 
 @layer base {
     body {
-        @apply font-sans;
+        @apply font-sans bg-black text-white;
     }
 
     p {
         @apply text-base leading-[1.625rem];
     }
 
+    .container {
+        @apply px-4 md:px-8 lg:px-40 mx-auto;
+    }
+
     .logo {
         @apply text-xl font-bold leading-8;
     }
 
-    .button {
-        @apply uppercase font-bold border-b-2 border-b-green leading-[1.625rem];
+    .mask {
+        mask-image: linear-gradient(180deg, rgba(36, 36, 36, 0.00) 0%, #242424 100%);
+        -webkit-mask-image: linear-gradient(180deg, rgba(36, 36, 36, 0.00) 0%, #242424 100%);
+        mask-size: 174px 23.9375rem;
     }
 
-    .social {
-        @apply flex;
+    .masked {
+        position: absolute;
+        top: 2.5rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
     }
+
+    .button {
+        @apply uppercase font-bold border-b-2 border-b-green leading-[1.625rem] hover:text-green;
+    }
+
+    .info {
+        @apply flex flex-col justify-center text-center gap-y-5;
+    }
+
+    /* Social */
+
+    .social {
+        @apply flex justify-center gap-x-6;
+    }
+
+    .social__icon {
+        @apply h-[20px] fill-green;
+    }
+
+    /* Projects */
 
     .projects {
         @apply flex flex-col gap-y-10;
@@ -43,6 +73,10 @@
         @apply flex gap-x-8;
     }
 
+    .project__link {
+        @apply button text-base;
+    }
+
     .skill__name {
         @apply text-3xl font-bold leading-10;
     }
@@ -51,7 +85,5 @@
         @apply text-base text-grey leading-[1.625rem];
     }
 
-    .container {
-        @apply px-4 md:px-8 lg:px-40 mx-auto;
-    }
+    
 }
