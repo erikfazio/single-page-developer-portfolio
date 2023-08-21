@@ -9,127 +9,135 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Single page developer portfolio</title>
   </head>
-  <body class="bg-black text-white">
+  <body class=" bg-black text-white">
     <div id="app">
-      <header>
-        <div class="flex">
+      <header class="container text-center">
+        <div class="logo">adamkeyes</div>
+        <div class="social">
           <img src="images/icon-github.svg" alt="Github icon">
           <img src="images/icon-frontend-mentor.svg" alt="Frontend Mentor icon">
           <img src="images/icon-linkedin.svg" alt="Linkedin icon">
           <img src="images/icon-twitter.svg" alt="Twitter icon">
         </div>
-        <div>adamkeyes</div>
       </header>
-      <section class="text-center">
-        <img src="images/image-profile-mobile.webp" alt="My photo">
-        <h1 class="text-2xl font-bold">Nice to meet you! I’m <span class="border-b-2 border-b-green">Adam Keyes</span>.</h1>
+      <section class="container text-center m-auto">
+        <div class="flex justify-center">
+          <img class="h-[242px]" src="images/image-profile-mobile.webp" alt="My photo">
+        </div>
+        <h1 class="text-3xl font-bold">Nice to meet you! I’m <span class="border-b-2 border-b-green">Adam Keyes</span>.</h1>
         <p class="text-grey text-center font-medium">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
         <button class="button" type="button">Contact me</button>
       </section>
-      <section>
+      <section class="container border-t border-b border-t-white border-b-white">
         <ul class="text-center">
           <li>
-            <h2 class="text-2xl font-bold">HTML</h2>
-            <h3 class="text-base text-grey">4 Years Experience</h3>
+            <h2 class="skill__name">HTML</h2>
+            <h3 class="skill__experience">4 Years Experience</h3>
           </li>
           <li>
-            <h2 class="text-2xl font-bold">CSS</h2>
-            <h3 class="text-base text-grey">4 Years Experience</h3>
+            <h2 class="skill__name">CSS</h2>
+            <h3 class="skill__experience">4 Years Experience</h3>
           </li>
           <li>
-            <h2 class="text-2xl font-bold">Javascript</h2>
-            <h3 class="text-base text-grey">4 Years Experience</h3>
+            <h2 class="skill__name">Javascript</h2>
+            <h3 class="skill__experience">4 Years Experience</h3>
           </li>
           <li>
-            <h2 class="text-2xl font-bold">Accessibility</h2>
-            <h3 class="text-base text-grey">4 Years Experience</h3>
+            <h2 class="skill__name">Accessibility</h2>
+            <h3 class="skill__experience">4 Years Experience</h3>
           </li>
           <li>
-            <h2 class="text-2xl font-bold">React</h2>
-            <h3 class="text-base text-grey">3 Years Experience</h3>
+            <h2 class="skill__name">React</h2>
+            <h3 class="skill__experience">3 Years Experience</h3>
           </li>
           <li>
-            <h2 class="text-2xl font-bold">Sass</h2>
-            <h3 class="text-base text-grey">3 Years Experience</h3>
+            <h2 class="skill__name">Sass</h2>
+            <h3 class="skill__experience">3 Years Experience</h3>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="container">
         <div class="flex justify-between">
-          <h2 class="text-3xl font-bold">Projects</h2>
+          <h2 class="text-4xl font-bold leading-10">Projects</h2>
           <button class="button" type="button">Contact me</button>
         </div>
-        <article>
-          <img src="images/thumbnail-project-1-small.webp" alt="">
-          <h3 class="">Design portfolio</h3>
-          <ul class="flex"><li class="text-lg font-medium text-grey uppercase">Html</li><li class="text-lg font-medium text-grey uppercase">Css</li></ul>
-          <div>
-            <button class="button">View project</button>
-            <button class="button">View code</button>
-          </div>
-        </article>
-        <article>
-          <img src="images/thumbnail-project-2-small.webp" alt="">
-          <h3 class="">E-learning landing page</h3>
-          <ul class="flex"><li class="text-lg font-medium text-grey uppercase">Html</li><li class="text-lg font-medium text-grey uppercase">Css</li></ul>
-          <div>
-            <button class="button">View project</button>
-            <button class="button">View code</button>
-          </div>
-        </article>
-        <article>
-          <img src="images/thumbnail-project-3-small.webp" alt="">
-          <h3 class="">Todo web app</h3>
-          <ul class="flex"><li class="text-lg font-medium text-grey uppercase">Html</li><li class="text-lg font-medium text-grey uppercase">Css</li></ul>
-          <div>
-            <button class="button">View project</button>
-            <button class="button">View code</button>
-          </div>
-        </article>
-        <article>
-          <img src="images/thumbnail-project-4-small.webp" alt="">
-          <h3 class="">Entertainment web app</h3>
-          <ul class="flex"><li class="text-lg font-medium text-grey uppercase">Html</li><li class="text-lg font-medium text-grey uppercase">Css</li></ul>
-          <div>
-            <button class="button">View project</button>
-            <button class="button">View code</button>
-          </div>
-        </article>
-        <article>
-          <img src="images/thumbnail-project-5-small.webp" alt="">
-          <h3 class="">Memory game</h3>
-          <ul class="flex"><li class="text-lg font-medium text-grey uppercase">Html</li><li class="text-lg font-medium text-grey uppercase">Css</li></ul>
-          <div>
-            <button class="button">View project</button>
-            <button class="button">View code</button>
-          </div>
-        </article>
-        <article>
-          <img src="images/thumbnail-project-6-small.webp" alt="">
-          <h3 class="">Art gallery showcase</h3>
-          <ul class="flex"><li class="text-lg font-medium text-grey uppercase">Html</li><li class="text-lg font-medium text-grey uppercase">Css</li></ul>
-          <div>
-            <button class="button">View project</button>
-            <button class="button">View code</button>
-          </div>
-        </article>
+        <div class="projects">
+          <article>
+            <img src="images/thumbnail-project-1-small.webp" alt="">
+            <h3 class="project__title">Design portfolio</h3>
+            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
+            <div class="project__links">
+              <button class="button">View project</button>
+              <button class="button">View code</button>
+            </div>
+          </article>
+          <article>
+            <img src="images/thumbnail-project-2-small.webp" alt="">
+            <h3 class="project__title">E-learning landing page</h3>
+            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
+            <div class="project__links">
+              <button class="button">View project</button>
+              <button class="button">View code</button>
+            </div>
+          </article>
+          <article>
+            <img src="images/thumbnail-project-3-small.webp" alt="">
+            <h3 class="project__title">Todo web app</h3>
+            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
+            <div class="project__links">
+              <button class="button">View project</button>
+              <button class="button">View code</button>
+            </div>
+          </article>
+          <article>
+            <img src="images/thumbnail-project-4-small.webp" alt="">
+            <h3 class="project__title">Entertainment web app</h3>
+            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
+            <div class="project__links">
+              <button class="button">View project</button>
+              <button class="button">View code</button>
+            </div>
+          </article>
+          <article>
+            <img src="images/thumbnail-project-5-small.webp" alt="">
+            <h3 class="project__title">Memory game</h3>
+            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
+            <div class="project__links">
+              <button class="button">View project</button>
+              <button class="button">View code</button>
+            </div>
+          </article>
+          <article>
+            <img src="images/thumbnail-project-6-small.webp" alt="">
+            <h3 class="project__title">Art gallery showcase</h3>
+            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
+            <div class="project__links">
+              <button class="button">View project</button>
+              <button class="button">View code</button>
+            </div>
+          </article>
+        </div>
       </section>
-      <section class="bg-darkGray">
-        <h2 class="text-center text-2xl font-bold">Contact</h2>
+      <section class="bg-darkGray border-b border-b-white">
+        <div class="container">
+          <h2 class="text-center text-3xl font-bold">Contact</h2>
         <p class="text-center font-medium">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
         <form>
-          <input type="text" name="name" placeholder="name">
-          <input type="email" name="email" placeholder="email">
-          <textarea name="messafe" cols="30" rows="10" placeholder="message"></textarea>
+          <input class="bg-darkGray border-b border-b-white w-full" type="text" name="name" placeholder="name">
+          <input class="bg-darkGray border-b border-b-white w-full" type="email" name="email" placeholder="email">
+          <textarea class="bg-darkGray border-b border-b-white w-full" name="messafe" cols="30" rows="10" placeholder="message"></textarea>
           <button class="button" class="button" type="submit">Send message</button>
         </form>
+        </div>
       </section>
-      <footer>
-        <div>adamkeyes</div>
-        <img src="images/icon-github.svg" alt="Github icon">
-        <img src="images/icon-frontend-mentor.svg" alt="Frontend Mentor icon">
-        <img src="images/icon-linkedin.svg" alt="Linkedin icon">
-        <img src="images/icon-twitter.svg" alt="Twitter icon">
+      <footer class="container">
+        <div class="logo">adamkeyes</div>
+        <div class="social">
+          <img src="images/icon-github.svg" alt="Github icon">
+          <img src="images/icon-frontend-mentor.svg" alt="Frontend Mentor icon">
+          <img src="images/icon-linkedin.svg" alt="Linkedin icon">
+          <img src="images/icon-twitter.svg" alt="Twitter icon">
+        </div>
       </footer>
     </div>
     <script type="module" src="/main.js"></script>
