@@ -11,6 +11,10 @@
         @apply text-base leading-[1.625rem];
     }
 
+    *::placeholder {
+        text-transform: uppercase;
+    }
+
     .container {
         @apply px-4 md:px-8 lg:px-40 mx-auto;
     }
@@ -34,7 +38,7 @@
     }
 
     .button {
-        @apply uppercase font-bold border-b-2 border-b-green leading-[1.625rem] hover:text-green;
+        @apply uppercase font-bold border-b-2 border-b-green leading-[1.625rem] hover:text-green pb-2;
     }
 
     .info {
@@ -85,5 +89,7 @@
         @apply text-base text-grey leading-[1.625rem];
     }
 
-    
+    .input {
+        @apply bg-darkGray border-b border-b-white w-full pb-4 placeholder:pl-6 placeholder:font-medium;
+    }
 }
