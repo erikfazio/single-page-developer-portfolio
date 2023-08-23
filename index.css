@@ -58,11 +58,11 @@
     }
 
     .project__title {
-        @apply text-xl font-bold leading-10;
+        @apply text-xl font-bold leading-10 mt-5 uppercase;
     }
 
     .project__tags {
-        @apply flex gap-x-4;
+        @apply flex gap-x-4 mt-2;
     }
 
     .project__tag {
@@ -70,7 +70,7 @@
     }
 
     .project__links {
-        @apply flex gap-x-8;
+        @apply flex gap-x-8 mt-5;
     }
 
     .project__link {
