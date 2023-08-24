@@ -3,9 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      "sm": "376px",
-      "md": "768px",
-      "lg": "1440px"
+      sm: "376px",
+      md: "768px",
+      lg: "1440px",
     },
     colors: {
       black: "hsla(0, 0%, 8%, 1)",
@@ -18,10 +18,10 @@ export default {
       sans: ["Space Grotesk", "sans-serif"],
     },
     fontSize: {
-      "sm": "0.75rem",
-      "base": "1rem",
-      "lg": "1.125rem",
-      "xl": "1.5rem",
+      sm: "0.75rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.5rem",
       "2xl": "2.5rem",
       "3xl": "2rem",
       "4xl": "2.5rem",

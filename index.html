@@ -1,152 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Single page developer portfolio</title>
   </head>
   <body>
-    <div id="app">
-      <header class="info relative">
-        <div class="mask w-[174px] mx-auto">
-          <img class="w-[174px]" src="images/image-profile-mobile.webp" alt="My photo">
-        </div>
-        <div class="masked flex flex-col gap-y-[1.25rem]">
-          <div class="logo">adamkeyes</div>
-          <div class="social">
-            <img class="social__icon" src="images/icon-github.svg" alt="Github icon">
-            <img class="social__icon" src="images/icon-frontend-mentor.svg" alt="Frontend Mentor icon">
-            <img class="social__icon" src="images/icon-linkedin.svg" alt="Linkedin icon">
-            <img class="social__icon" src="images/icon-twitter.svg" alt="Twitter icon">
-          </div>
-        </div>
-      </header>
-      <section class="container text-center pb-20 mt-10">
-        <h1 class="text-3xl font-bold">Nice to meet you! I’m <span class="border-b-2 border-b-green">Adam Keyes</span>.</h1>
-        <p class="text-grey text-center font-medium mt-6">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
-        <button class="button mt-6" type="button">Contact me</button>
-      </section>
-      <section class="container">
-        <ul class="w-full flex flex-col gap-y-6 text-center justify-center py-10 border-t border-b border-t-white border-b-white">
-          <li>
-            <h2 class="skill__name">HTML</h2>
-            <h3 class="skill__experience">4 Years Experience</h3>
-          </li>
-          <li>
-            <h2 class="skill__name">CSS</h2>
-            <h3 class="skill__experience">4 Years Experience</h3>
-          </li>
-          <li>
-            <h2 class="skill__name">Javascript</h2>
-            <h3 class="skill__experience">4 Years Experience</h3>
-          </li>
-          <li>
-            <h2 class="skill__name">Accessibility</h2>
-            <h3 class="skill__experience">4 Years Experience</h3>
-          </li>
-          <li>
-            <h2 class="skill__name">React</h2>
-            <h3 class="skill__experience">3 Years Experience</h3>
-          </li>
-          <li>
-            <h2 class="skill__name">Sass</h2>
-            <h3 class="skill__experience">3 Years Experience</h3>
-          </li>
-        </ul>
-      </section>
-      <section class="container py-20">
-        
-        <div class="projects">
-          <div class="flex justify-between">
-            <h2 class="text-4xl font-bold leading-10">Projects</h2>
-            <button class="button" type="button">Contact me</button>
-          </div>
-          <article>
-            <img src="images/thumbnail-project-1-small.webp" alt="">
-            <h3 class="project__title">Design portfolio</h3>
-            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
-            <div class="project__links">
-              <button class="project__link">View project</button>
-              <button class="project__link">View code</button>
-            </div>
-          </article>
-          <article>
-            <img src="images/thumbnail-project-2-small.webp" alt="">
-            <h3 class="project__title">E-learning landing page</h3>
-            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
-            <div class="project__links">
-              <button class="project__link">View project</button>
-              <button class="project__link">View code</button>
-            </div>
-          </article>
-          <article>
-            <img src="images/thumbnail-project-3-small.webp" alt="">
-            <h3 class="project__title">Todo web app</h3>
-            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
-            <div class="project__links">
-              <button class="project__link">View project</button>
-              <button class="project__link">View code</button>
-            </div>
-          </article>
-          <article>
-            <img src="images/thumbnail-project-4-small.webp" alt="">
-            <h3 class="project__title">Entertainment web app</h3>
-            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
-            <div class="project__links">
-              <button class="project__link">View project</button>
-              <button class="project__link">View code</button>
-            </div>
-          </article>
-          <article>
-            <img src="images/thumbnail-project-5-small.webp" alt="">
-            <h3 class="project__title">Memory game</h3>
-            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
-            <div class="project__links">
-              <button class="project__link">View project</button>
-              <button class="project__link">View code</button>
-            </div>
-          </article>
-          <article>
-            <img src="images/thumbnail-project-6-small.webp" alt="">
-            <h3 class="project__title">Art gallery showcase</h3>
-            <ul class="project__tags"><li class="project__tag">Html</li><li class="project__tag">Css</li></ul>
-            <div class="project__links">
-              <button class="button">View project</button>
-              <button class="button">View code</button>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="pt-[3.75rem] pb-[5.5rem] bg-darkGray border-b border-b-white">
-        <div class="container">
-          <h2 class="text-center text-4xl font-bold">Contact</h2>
-        <p class="text-center font-medium text-grey mt-6">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
-        <form class="mt-12">
-          <div class="flex flex-col gap-8">
-            <input class="input" type="text" name="name" placeholder="name">
-            <input class="input" type="email" name="email" placeholder="email">
-            <textarea class="input" name="message" cols="30" rows="10" placeholder="message"></textarea>
-          </div>
-          <div class="flex justify-end mt-8">
-            <button class="button" class="button" type="submit">Send message</button>
-          </div>
-        </form>
-        </div>
-      </section>
-      <footer class="bg-darkGray info pt-11 pb-[3.75rem]">
+    <header class="info relative">
+      <div class="mask mx-auto w-[174px]">
+        <img
+          class="w-[174px]"
+          src="images/image-profile-mobile.webp"
+          alt="My photo"
+        />
+      </div>
+      <div class="masked flex flex-col gap-y-[1.25rem]">
         <div class="logo">adamkeyes</div>
         <div class="social">
-          <img class="social__icon" src="images/icon-github.svg" alt="Github icon">
-          <img class="social__icon" src="images/icon-frontend-mentor.svg" alt="Frontend Mentor icon">
-          <img class="social__icon" src="images/icon-linkedin.svg" alt="Linkedin icon">
-          <img class="social__icon" src="images/icon-twitter.svg" alt="Twitter icon">
+          <img
+            class="social__icon"
+            src="images/icon-github.svg"
+            alt="Github icon"
+          />
+          <img
+            class="social__icon"
+            src="images/icon-frontend-mentor.svg"
+            alt="Frontend Mentor icon"
+          />
+          <img
+            class="social__icon"
+            src="images/icon-linkedin.svg"
+            alt="Linkedin icon"
+          />
+          <img
+            class="social__icon"
+            src="images/icon-twitter.svg"
+            alt="Twitter icon"
+          />
         </div>
-      </footer>
-    </div>
+      </div>
+    </header>
+    <section class="container mt-10 pb-20 text-center">
+      <h1 class="text-3xl font-bold">
+        Nice to meet you! I’m
+        <span class="border-b-2 border-b-green">Adam Keyes</span>.
+      </h1>
+      <p class="mt-6 text-center font-medium text-grey">
+        Based in the UK, I’m a front-end developer passionate about building
+        accessible web apps that users love.
+      </p>
+      <button class="mt-6" type="button">Contact me</button>
+    </section>
+    <section class="container">
+      <ul
+        class="flex w-full flex-col justify-center gap-y-6 border-b border-t border-b-white border-t-white py-10 text-center"
+      >
+        <li>
+          <h2 class="skill__name">HTML</h2>
+          <h3 class="skill__experience">4 Years Experience</h3>
+        </li>
+        <li>
+          <h2 class="skill__name">CSS</h2>
+          <h3 class="skill__experience">4 Years Experience</h3>
+        </li>
+        <li>
+          <h2 class="skill__name">Javascript</h2>
+          <h3 class="skill__experience">4 Years Experience</h3>
+        </li>
+        <li>
+          <h2 class="skill__name">Accessibility</h2>
+          <h3 class="skill__experience">4 Years Experience</h3>
+        </li>
+        <li>
+          <h2 class="skill__name">React</h2>
+          <h3 class="skill__experience">3 Years Experience</h3>
+        </li>
+        <li>
+          <h2 class="skill__name">Sass</h2>
+          <h3 class="skill__experience">3 Years Experience</h3>
+        </li>
+      </ul>
+    </section>
+    <section class="container py-20">
+      <div class="projects">
+        <div class="flex justify-between">
+          <h2 class="text-4xl font-bold leading-10">Projects</h2>
+          <button type="button">Contact me</button>
+        </div>
+        <article>
+          <img src="images/thumbnail-project-1-small.webp" alt="" />
+          <h3 class="project__title">Design portfolio</h3>
+          <ul class="project__tags">
+            <li class="project__tag">Html</li>
+            <li class="project__tag">Css</li>
+          </ul>
+          <div class="project__links">
+            <button class="project__link">View project</button>
+            <button class="project__link">View code</button>
+          </div>
+        </article>
+        <article>
+          <img src="images/thumbnail-project-2-small.webp" alt="" />
+          <h3 class="project__title">E-learning landing page</h3>
+          <ul class="project__tags">
+            <li class="project__tag">Html</li>
+            <li class="project__tag">Css</li>
+          </ul>
+          <div class="project__links">
+            <button class="project__link">View project</button>
+            <button class="project__link">View code</button>
+          </div>
+        </article>
+        <article>
+          <img src="images/thumbnail-project-3-small.webp" alt="" />
+          <h3 class="project__title">Todo web app</h3>
+          <ul class="project__tags">
+            <li class="project__tag">Html</li>
+            <li class="project__tag">Css</li>
+          </ul>
+          <div class="project__links">
+            <button class="project__link">View project</button>
+            <button class="project__link">View code</button>
+          </div>
+        </article>
+        <article>
+          <img src="images/thumbnail-project-4-small.webp" alt="" />
+          <h3 class="project__title">Entertainment web app</h3>
+          <ul class="project__tags">
+            <li class="project__tag">Html</li>
+            <li class="project__tag">Css</li>
+          </ul>
+          <div class="project__links">
+            <button class="project__link">View project</button>
+            <button class="project__link">View code</button>
+          </div>
+        </article>
+        <article>
+          <img src="images/thumbnail-project-5-small.webp" alt="" />
+          <h3 class="project__title">Memory game</h3>
+          <ul class="project__tags">
+            <li class="project__tag">Html</li>
+            <li class="project__tag">Css</li>
+          </ul>
+          <div class="project__links">
+            <button class="project__link">View project</button>
+            <button class="project__link">View code</button>
+          </div>
+        </article>
+        <article>
+          <img src="images/thumbnail-project-6-small.webp" alt="" />
+          <h3 class="project__title">Art gallery showcase</h3>
+          <ul class="project__tags">
+            <li class="project__tag">Html</li>
+            <li class="project__tag">Css</li>
+          </ul>
+          <div class="project__links">
+            <button>View project</button>
+            <button>View code</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section
+      class="border-b border-b-white bg-darkGray pb-[5.5rem] pt-[3.75rem]"
+    >
+      <div class="container">
+        <h2 class="text-center text-4xl font-bold">Contact</h2>
+        <p class="mt-6 text-center font-medium text-grey">
+          I would love to hear about your project and how I could help. Please
+          fill in the form, and I’ll get back to you as soon as possible.
+        </p>
+        <form class="mt-12">
+          <div class="flex flex-col gap-8">
+            <input class="input" type="text" name="name" placeholder="name" />
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="email"
+            />
+            <textarea
+              class="input"
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="message"
+            ></textarea>
+          </div>
+          <div class="mt-8 flex justify-end">
+            <button type="submit">Send message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="info bg-darkGray pb-[3.75rem] pt-11">
+      <div class="logo">adamkeyes</div>
+      <div class="social">
+        <img
+          class="social__icon"
+          src="images/icon-github.svg"
+          alt="Github icon"
+        />
+        <img
+          class="social__icon"
+          src="images/icon-frontend-mentor.svg"
+          alt="Frontend Mentor icon"
+        />
+        <img
+          class="social__icon"
+          src="images/icon-linkedin.svg"
+          alt="Linkedin icon"
+        />
+        <img
+          class="social__icon"
+          src="images/icon-twitter.svg"
+          alt="Twitter icon"
+        />
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -3,93 +3,127 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply font-sans bg-black text-white;
-    }
+  /* General */
+  body {
+    @apply bg-black font-sans text-white;
+  }
 
-    p {
-        @apply text-base leading-[1.625rem];
-    }
+  p {
+    @apply text-base leading-[1.625rem];
+  }
 
-    *::placeholder {
-        text-transform: uppercase;
-    }
+  *::placeholder {
+    text-transform: uppercase;
+  }
 
-    .container {
-        @apply px-4 md:px-8 lg:px-40 mx-auto;
-    }
+  .letter-spacing {
+    letter-spacing: 0.14288rem;
+  }
 
-    .logo {
-        @apply text-xl font-bold leading-8;
-    }
+  .button {
+    @apply letter-spacing border-b-2 border-b-green pb-2 font-bold uppercase leading-[1.625rem] hover:text-green;
+  }
 
-    .mask {
-        mask-image: linear-gradient(180deg, rgba(36, 36, 36, 0.00) 0%, #242424 100%);
-        -webkit-mask-image: linear-gradient(180deg, rgba(36, 36, 36, 0.00) 0%, #242424 100%);
-        mask-size: 174px 23.9375rem;
-    }
+  .button--hover {
+    @apply text-green;
+  }
 
-    .masked {
-        position: absolute;
-        top: 2.5rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0;
-    }
+  button {
+    @apply button;
+  }
 
-    .button {
-        @apply uppercase font-bold border-b-2 border-b-green leading-[1.625rem] hover:text-green pb-2;
-    }
+  button:hover {
+    @apply button button--hover;
+  }
 
-    .info {
-        @apply flex flex-col justify-center text-center gap-y-5;
-    }
+  input,
+  textarea {
+    @apply w-full border-b border-b-white bg-darkGray pb-4 pl-6 font-medium uppercase leading-[1.625rem] placeholder:font-medium;
+  }
 
-    /* Social */
+  input:active {
+    @apply border-b-green;
+  }
 
-    .social {
-        @apply flex justify-center gap-x-6;
-    }
+  .input--error {
+    @apply border-b-[#FF6F5B];
+  }
 
-    .social__icon {
-        @apply h-[20px] fill-green;
-    }
+  /* Blocks */
 
-    /* Projects */
+  .container {
+    @apply mx-auto px-4 md:px-8 lg:px-40;
+  }
 
-    .projects {
-        @apply flex flex-col gap-y-10;
-    }
+  .logo {
+    @apply text-xl font-bold leading-8;
+  }
 
-    .project__title {
-        @apply text-xl font-bold leading-10 mt-5 uppercase;
-    }
+  .mask {
+    mask-image: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, #242424 100%);
+    -webkit-mask-image: linear-gradient(
+      180deg,
+      rgba(36, 36, 36, 0) 0%,
+      #242424 100%
+    );
+    mask-size: 174px 23.9375rem;
+  }
 
-    .project__tags {
-        @apply flex gap-x-4 mt-2;
-    }
+  .masked {
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
 
-    .project__tag {
-        @apply text-lg font-medium text-grey uppercase;
-    }
+  .info {
+    @apply flex flex-col justify-center gap-y-5 text-center;
+  }
 
-    .project__links {
-        @apply flex gap-x-8 mt-5;
-    }
+  /* Social */
 
-    .project__link {
-        @apply button text-base;
-    }
+  .social {
+    @apply flex justify-center gap-x-6;
+  }
 
-    .skill__name {
-        @apply text-3xl font-bold leading-10;
-    }
+  .social__icon {
+    @apply h-[20px] fill-green;
+  }
 
-    .skill__experience {
-        @apply text-base text-grey leading-[1.625rem];
-    }
+  /* Projects */
 
-    .input {
-        @apply bg-darkGray border-b border-b-white w-full pb-4 placeholder:pl-6 placeholder:font-medium;
-    }
+  .projects {
+    @apply flex flex-col gap-y-10;
+  }
+
+  .project__title {
+    @apply mt-5 text-xl font-bold uppercase leading-10;
+  }
+
+  .project__tags {
+    @apply mt-2 flex gap-x-4;
+  }
+
+  .project__tag {
+    @apply text-lg font-medium uppercase text-grey;
+  }
+
+  .project__links {
+    @apply mt-5 flex gap-x-8;
+  }
+
+  .project__link {
+    @apply button text-base;
+  }
+
+  /* Skill */
+
+  .skill__name {
+    @apply text-3xl font-bold leading-10;
+  }
+
+  .skill__experience {
+    @apply text-base leading-[1.625rem] text-grey;
+  }
 }
