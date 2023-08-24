@@ -78,7 +78,7 @@
   }
 
   .info {
-    @apply flex flex-col justify-center gap-y-5 text-center;
+    @apply flex flex-col justify-center gap-y-5 text-center md:flex-row md:items-center md:justify-between;
   }
 
   /* Social */
@@ -94,7 +94,17 @@
   /* Projects */
 
   .projects {
-    @apply flex flex-col gap-y-10;
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: 768px) {
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 1.25rem;
+      grid-row-gap: 3.75rem;
+    }
   }
 
   .project__title {
@@ -119,11 +129,37 @@
 
   /* Skill */
 
+  .skills {
+    @apply grid border-b border-t border-b-white border-t-white py-10 md:border-b-0 md:pb-[6.25rem] md:pt-[3.25rem] lg:pb-[8.75rem] lg:pt-[4.5rem];
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .skills {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 3.25rem;
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .skills {
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 3.5rem;
+    }
+  }
+
+  .skill {
+    @apply text-center md:flex md:flex-col md:gap-4 md:text-left;
+  }
+
   .skill__name {
-    @apply text-3xl font-bold leading-10;
+    @apply text-3xl font-bold leading-10 md:text-5xl;
   }
 
   .skill__experience {
-    @apply text-base leading-[1.625rem] text-grey;
+    @apply text-base leading-[1.625rem] text-grey md:text-lg;
   }
 }

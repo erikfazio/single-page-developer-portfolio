@@ -59,41 +59,39 @@
       <button class="mt-6" type="button">Contact me</button>
     </section>
     <section class="container">
-      <ul
-        class="flex w-full flex-col justify-center gap-y-6 border-b border-t border-b-white border-t-white py-10 text-center"
-      >
-        <li>
+      <ul class="skills">
+        <li class="skill">
           <h2 class="skill__name">HTML</h2>
           <h3 class="skill__experience">4 Years Experience</h3>
         </li>
-        <li>
+        <li class="skill">
           <h2 class="skill__name">CSS</h2>
           <h3 class="skill__experience">4 Years Experience</h3>
         </li>
-        <li>
+        <li class="skill">
           <h2 class="skill__name">Javascript</h2>
           <h3 class="skill__experience">4 Years Experience</h3>
         </li>
-        <li>
+        <li class="skill">
           <h2 class="skill__name">Accessibility</h2>
           <h3 class="skill__experience">4 Years Experience</h3>
         </li>
-        <li>
+        <li class="skill">
           <h2 class="skill__name">React</h2>
           <h3 class="skill__experience">3 Years Experience</h3>
         </li>
-        <li>
+        <li class="skill">
           <h2 class="skill__name">Sass</h2>
           <h3 class="skill__experience">3 Years Experience</h3>
         </li>
       </ul>
     </section>
     <section class="container py-20">
+      <div class="flex justify-between">
+        <h2 class="text-4xl font-bold leading-10">Projects</h2>
+        <button type="button">Contact me</button>
+      </div>
       <div class="projects">
-        <div class="flex justify-between">
-          <h2 class="text-4xl font-bold leading-10">Projects</h2>
-          <button type="button">Contact me</button>
-        </div>
         <article>
           <img src="images/thumbnail-project-1-small.webp" alt="" />
           <h3 class="project__title">Design portfolio</h3>
@@ -169,7 +167,7 @@
       </div>
     </section>
     <section
-      class="border-b border-b-white bg-darkGray pb-[5.5rem] pt-[3.75rem]"
+      class="border-b border-b-white bg-darkGray pb-[5.5rem] pt-[3.75rem] md:pb-[5.75rem]"
     >
       <div class="container">
         <h2 class="text-center text-4xl font-bold">Contact</h2>
@@ -200,29 +198,31 @@
         </form>
       </div>
     </section>
-    <footer class="info bg-darkGray pb-[3.75rem] pt-11">
-      <div class="logo">adamkeyes</div>
-      <div class="social">
-        <img
-          class="social__icon"
-          src="images/icon-github.svg"
-          alt="Github icon"
-        />
-        <img
-          class="social__icon"
-          src="images/icon-frontend-mentor.svg"
-          alt="Frontend Mentor icon"
-        />
-        <img
-          class="social__icon"
-          src="images/icon-linkedin.svg"
-          alt="Linkedin icon"
-        />
-        <img
-          class="social__icon"
-          src="images/icon-twitter.svg"
-          alt="Twitter icon"
-        />
+    <footer class="bg-darkGray pb-[3.75rem] pt-11">
+      <div class="info container">
+        <div class="logo">adamkeyes</div>
+        <div class="social">
+          <img
+            class="social__icon"
+            src="images/icon-github.svg"
+            alt="Github icon"
+          />
+          <img
+            class="social__icon"
+            src="images/icon-frontend-mentor.svg"
+            alt="Frontend Mentor icon"
+          />
+          <img
+            class="social__icon"
+            src="images/icon-linkedin.svg"
+            alt="Linkedin icon"
+          />
+          <img
+            class="social__icon"
+            src="images/icon-twitter.svg"
+            alt="Twitter icon"
+          />
+        </div>
       </div>
     </footer>
     <script type="module" src="/main.js"></script>
